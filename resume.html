@@ -8,6 +8,72 @@
     <style>
         body {
             font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2em 0;
+        }
+        h2 {
+            color: #B28068;
+            font-size: 2.5em;
+            margin-bottom: 1em;
+            text-align: center;
+        }
+        .resume-section {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 2em;
+            padding: 1.5em;
+        }
+        .resume-section h3 {
+            color: #B28068;
+            font-size: 1.8em;
+            margin-bottom: 0.5em;
+        }
+        .resume-item {
+            margin-bottom: 1em;
+        }
+        .resume-item h4 {
+            font-weight: 600;
+            font-size: 1.2em;
+            margin-bottom: 0.5em;
+        }
+        .resume-date {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 0.5em;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 0.5em;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #B28068;
+        }
+        .back-button {
+            display: inline-block;
+            margin-bottom: 1em;
+            padding: 0.5em 1em;
+            background-color: #B28068;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #9a6d58;
         }
     </style>
 </head>
@@ -19,9 +85,87 @@
         <!-- Copy the updated nav content from index.html -->
     </nav>
     <div class="container">
+        <a href="index.html" class="back-button">&larr; Back to Home</a>
         <section id="resume">
             <h2>Resume</h2>
-            <p>Here you can find my latest resume: <a href="link-to-your-resume.pdf">Download Resume</a></p>
+            
+            <div class="resume-section">
+                <h3>Education</h3>
+                <div class="resume-item">
+                    <h4>Virginia Polytechnic Institute and State University, Blacksburg, VA</h4>
+                    <p class="resume-date">Expected May 2025</p>
+                    <p>B.S. in Business Information Technology, Concentration in Operations and Supply Chain Management, Minor: Data and Decisions</p>
+                    <p>Dean's List: Fall 2023, Spring 2024</p>
+                </div>
+            </div>
+            
+            <div class="resume-section">
+                <h3>Work Experience</h3>
+                
+                <div class="resume-item">
+                    <h4>HighEd Technology Sales Intern, CDW - Blacksburg, VA</h4>
+                    <p class="resume-date">Jan 2024 - Present</p>
+                    <ul>
+                        <li>Conducted comprehensive research on higher education technology trends at Virginia Tech</li>
+                        <li>Developed tailored IT and networking solutions by collaborating with Virginia Tech's IT department, CDW-G Account Team, and C-suite executives</li>
+                        <li>Participated in CDW partner training with Dell, Samsung, Palo Alto, Lenovo, Nvidia, and Intel</li>
+                        <li>Working on AI and sales projects, utilizing Salesforce to manage data and generate insights</li>
+                    </ul>
+                </div>
+                
+                <div class="resume-item">
+                    <h4>Recruiter Support, ETS Recruit - Roanoke, VA</h4>
+                    <p class="resume-date">May 2024 – Aug 2024</p>
+                    <ul>
+                        <li>Worked with Senior Account Executives, gained insights into the recruitment process by assisting in interviews and matching candidates to clients' needs</li>
+                        <li>Conducted marketing calls to clients, secured job orders for Account Executives, and completed key projects assigned by the Senior Account Executive</li>
+                        <li>Posted job openings on LinkedIn and the company website, crafted detailed job descriptions, and conducted LinkedIn searches to attract and source qualified candidates</li>
+                    </ul>
+                </div>
+                
+                <div class="resume-item">
+                    <h4>Operations and Procurement Analyst Intern, The H.T. Hackney Co - Lynchburg, VA</h4>
+                    <p class="resume-date">June 2023 – Aug 2023</p>
+                    <ul>
+                        <li>Gained hands-on experience in company's supply chain management process, worked closely with experienced buyers</li>
+                        <li>Became proficient in using software "AS400" for buying and creating vendor invoices</li>
+                        <li>Utilized Customer Relationship Management (CRM) software, "Communities," to generate insightful reports on status of store and conducted analyses to compare business performances</li>
+                        <li>Gained understanding of company's operations, structure, and culture, learning ins and outs of various departments and processes</li>
+                    </ul>
+                </div>
+                
+                <div class="resume-item">
+                    <h4>Supply Chain Management Intern, The H.T. Hackney Co - Lynchburg, VA</h4>
+                    <p class="resume-date">May 2022 – Aug 2022</p>
+                    <ul>
+                        <li>Engaged with Sales and Finance department</li>
+                        <li>Analyzed supply chain issues by conducting market survey</li>
+                        <li>Compiled data into charts, graphs and spreadsheets using Excel to be utilized by the business development team</li>
+                    </ul>
+                </div>
+                
+                <div class="resume-item">
+                    <h4>IT Consultant Intern, CMIT Solutions of Roanoke - Salem, VA</h4>
+                    <p class="resume-date">Nov 2021 – May 2022</p>
+                    <ul>
+                        <li>Maintained database system on Excel to track and analyze operational data</li>
+                        <li>Worked with the Chief Technology Officer to consult with small businesses on risks, solved cybersecurity issues, and implemented backup solutions and ensuring data protection</li>
+                    </ul>
+                </div>
+            </div>
+            
+            
+            <div class="resume-section">
+                <h3>Skills</h3>
+                <ul>
+                    <li><span class="highlight">Data Analysis & Visualization:</span> Advanced Excel (Lookup Functions, Pivot Tables, Data Analysis Tools), Tableau, Python, R</li>
+                    <li><span class="highlight">Programming:</span> Advanced VBA, Python, R, SQL</li>
+                    <li><span class="highlight">Business Operations:</span> Salesforce CRM, SAP, Microsoft Power BI</li>
+                    <li><span class="highlight">Process Improvement:</span> Bizagi Modeler, Lean Six Sigma principles</li>
+                    <li><span class="highlight">AI & Machine Learning:</span> Experience with Gemini by Google, ChatGPT, and other AI tools for business applications</li>
+                    <li><span class="highlight">Languages:</span> Fluent in English, Hindi, and Gujarati</li>
+                </ul>
+            </div>
         </section>
     </div>
     <footer>

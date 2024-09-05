@@ -8,6 +8,67 @@
     <style>
         body {
             font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2em 0;
+        }
+        h2 {
+            color: #B28068;
+            font-size: 2.5em;
+            margin-bottom: 1em;
+            text-align: center;
+        }
+        .project {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 2em;
+            padding: 1.5em;
+        }
+        .project h3 {
+            color: #B28068;
+            font-size: 1.8em;
+            margin-bottom: 0.5em;
+        }
+        .project-description {
+            margin-top: 1em;
+            font-style: italic;
+            color: #555;
+        }
+        .project-image {
+            max-width: 100%;
+            height: auto;
+            margin: 1em 0;
+            border-radius: 4px;
+        }
+        .project-feature {
+            margin-bottom: 1em;
+        }
+        .project-feature h4 {
+            color: #B28068;
+            margin-bottom: 0.5em;
+        }
+        .back-button {
+            display: inline-block;
+            margin-bottom: 1em;
+            padding: 0.5em 1em;
+            background-color: #B28068;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #9a6d58;
         }
     </style>
 </head>
@@ -19,9 +80,71 @@
         <!-- Copy the updated nav content from index.html -->
     </nav>
     <div class="container">
+        <a href="index.html" class="back-button">&larr; Back to Home</a>
         <section id="projects">
             <h2>Projects</h2>
-            <p>Here you can find my projects: <a href="link-to-your-resume.pdf">Download Resume</a></p>
+            
+            <div class="project">
+                <h3>Amazon Tracking Center: Optimization Model for Investment, Shipping, and Routing</h3>
+                <p class="project-description">An advanced system designed to optimize Amazon's tracking operations, including investment strategies, shipping logistics, and routing efficiency.</p>
+                
+                <div class="project-feature">
+                    <h4>Login System</h4>
+                    <p>The project features a secure login system with role-based access control:</p>
+                    <ul>
+                        <li>Users can log in as either a truck driver or a manager.</li>
+                        <li>The system validates usernames, passwords, and user types.</li>
+                        <li>Error messages are displayed for invalid credentials or mismatched user types.</li>
+                    </ul>
+                    <!-- [Insert Image 1, Image 2, Image 3, Image 4 here] -->
+                </div>
+                
+                <div class="project-feature">
+                    <h4>User Navigation</h4>
+                    <p>After successful login, users are presented with a navigation screen:</p>
+                    <ul>
+                        <li>Options include 'View Investment,' 'View Shipping,' and 'View Routing'.</li>
+                        <li>Access to certain features is restricted based on user role (e.g., truck drivers cannot access investment data).</li>
+                    </ul>
+                    <!-- [Insert Image 5, Image 6 here] -->
+                </div>
+                
+                <div class="project-feature">
+                    <h4>Investment Optimization</h4>
+                    <p>Managers have access to an investment optimization tool:</p>
+                    <ul>
+                        <li>Allows for minimizing expected risk and maximizing profit.</li>
+                        <li>Provides detailed information on expected return, risk, and profit.</li>
+                    </ul>
+                    <!-- [Insert Image 7, Image 8, Image 9, Image 10 here] -->
+                </div>
+                
+                <div class="project-feature">
+                    <h4>Shipping Optimization</h4>
+                    <p>Both managers and truck drivers can access the shipping optimization feature:</p>
+                    <ul>
+                        <li>Users can prioritize specific cities for shipping.</li>
+                        <li>The system calculates an optimal solution and updates total cities and percentages.</li>
+                    </ul>
+                    <!-- [Insert Image 11 here] -->
+                </div>
+                
+                <div class="project-feature">
+                    <h4>Routing Optimization</h4>
+                    <p>The routing page offers advanced path-finding capabilities:</p>
+                    <ul>
+                        <li>Users can input start and end cities, along with optional midpoint stops.</li>
+                        <li>The system calculates the most efficient total path.</li>
+                    </ul>
+                    <!-- [Insert Image 12 here] -->
+                </div>
+                
+                <div class="project-feature">
+                    <h4>Admin Features</h4>
+                    <p>A hidden admin page stores login credentials for both managers and truck drivers, ensuring secure access management.</p>
+                    <!-- [Insert Image 13, Image 14, Image 15, Image 16, Image 17, Image 18 here] -->
+                </div>
+            </div>
         </section>
     </div>
     <footer>
